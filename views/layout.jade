@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/reset.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		link(rel='stylesheet', href='/stylesheets/materialize.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+	body
+		nav(class='white', role='navigation')
+			div(class='nav-wrapper container')
+				a(id='logo-container', href='#', class='brand-logo') Logo
+				ul(class='right hide-on-med-and-down')
+					li
+						a(href='#') Navbar Link
+				ul(id='nav-mobile', class='side-nav')
+					li
+						a(href='#') Navbar Link
+				a(href='#', data-activates='nav-mobile', class='button-collapse')
+					i(class='material-icons') menu
+		div(class='container')
+			block content
+	script(src='/javascripts/jquery-2.2.1.min.js')
+	script(src='/javascripts/materialize.min.js')
+	script(src='/javascripts/init.js')
